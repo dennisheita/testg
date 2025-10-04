@@ -1,6 +1,7 @@
 import { Hono } from "hono";
 import { zValidator } from "@hono/zod-validator";
 import { CreateFoodEntrySchema, UpdateUserGoalSchema } from "@/shared/types";
+import { type Env } from "./types";
 
 const app = new Hono<{ Bindings: Env }>();
 
